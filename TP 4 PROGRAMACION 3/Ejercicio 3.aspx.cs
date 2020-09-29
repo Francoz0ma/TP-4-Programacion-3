@@ -22,7 +22,7 @@ namespace TP_4_PROGRAMACION_3
 
             int filas = con.EjTransaccion(consulta);
             if (filas == 0)
-            {
+            {              
                 lblAlerta.Text = "ERROR NO SE A PODIDO ELIMINAR DE LA BASE DE DATOS";
             }
             else
@@ -34,19 +34,9 @@ namespace TP_4_PROGRAMACION_3
         }
 
 
-        protected void lbListado_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 2.aspx");
-        }
-
-        protected void lbAgregar_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 1.aspx");
-        }
-
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            EliminarSucursal();
+            EliminarSucursal();          
         }
 
         public void LimpiarTXT()
@@ -54,9 +44,6 @@ namespace TP_4_PROGRAMACION_3
             txtIdSucursal.Text = "";
         }
 
-        protected void lbEliminar_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 3.aspx");
-        }
+     
     }
 }

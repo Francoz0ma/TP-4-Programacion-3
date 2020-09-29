@@ -32,17 +32,18 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style5">
-                    <asp:LinkButton ID="lbAgregar" runat="server" OnClick="lbAgregar_Click">Agregar sucursal</asp:LinkButton>
+                    <asp:HyperLink ID="hpAgregar" runat="server" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/Ejercicio 1.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style6">
-                    <asp:LinkButton ID="lbListado" runat="server">Listado de sucursales</asp:LinkButton>
+                    <asp:HyperLink ID="hlListado" runat="server" ForeColor="Blue" NavigateUrl="~/Ejercicio 2.aspx">Listado de sucursales</asp:HyperLink>
                 </td>
                 <td>
-                    <asp:LinkButton ID="lbEliminar" runat="server" OnClick="lbEliminar_Click">Eliminar sucursal</asp:LinkButton>
+                    <asp:HyperLink ID="hlEliminar" runat="server" ForeColor="Blue" NavigateUrl="~/Ejercicio 3.aspx">Eliminar sucursal</asp:HyperLink>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style5">
+                    <br />
                     <asp:Label ID="lblEliminarSucursales" runat="server" Font-Bold="True" Font-Size="Larger" Text="Listado de Sucursales"></asp:Label>
                 </td>
                 <td class="auto-style6">&nbsp;</td>

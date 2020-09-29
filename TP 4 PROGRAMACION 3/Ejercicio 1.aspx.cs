@@ -11,13 +11,18 @@ namespace TP_4_PROGRAMACION_3
 {
     public partial class Ejercicio_1 : System.Web.UI.Page
     {
+
+        Conexion conec = new Conexion();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
 
+            
+
             if (IsPostBack==false)
-            {
-                Cargarddl();
+            {             
+                conec.Cargarddl(ddlProvincia);
             }
         }
 
@@ -42,24 +47,6 @@ namespace TP_4_PROGRAMACION_3
         }
 
 
-        private void Cargarddl()
-        {
-            Conexion con = new Conexion();
-
-            String consulta = "Select * from Provincia";
-
-            DataSet ds = new DataSet();
-            SqlConnection cn = new SqlConnection(con.Llamarruta());
-            cn.Open();
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, cn);
-            adaptador.Fill(ds, "Provincia");
-            ddlProvincia.DataSource = ds.Tables["Provincia"];
-            ddlProvincia.DataTextField = "DescripcionProvincia";
-            ddlProvincia.DataValueField = "Id_Provincia";
-            ddlProvincia.DataBind();
-            cn.Close();
-        }
-
         public void LimpiarTXT()
         {
             txtDescripcion.Text = "";
@@ -68,19 +55,5 @@ namespace TP_4_PROGRAMACION_3
             
         }
 
-        protected void lbEliminarSucursal_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 3.aspx");
-        }
-
-        protected void lbListadodeSucursales_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 2.aspx");
-        }
-
-        protected void lbAgregarSucursal_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 1.aspx");
-        }
     }
 }

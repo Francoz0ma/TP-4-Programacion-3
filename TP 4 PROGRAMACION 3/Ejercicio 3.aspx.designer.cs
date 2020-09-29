@@ -24,31 +24,31 @@ namespace TP_4_PROGRAMACION_3
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control lbAgregar.
+        /// Control hpAgregar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbAgregar;
+        protected global::System.Web.UI.WebControls.HyperLink hpAgregar;
 
         /// <summary>
-        /// Control lbListado.
+        /// Control hlListado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbListado;
+        protected global::System.Web.UI.WebControls.HyperLink hlListado;
 
         /// <summary>
-        /// Control lbEliminar.
+        /// Control hlEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbEliminar;
+        protected global::System.Web.UI.WebControls.HyperLink hlEliminar;
 
         /// <summary>
         /// Control lblEliminarSucursales.

@@ -39,13 +39,13 @@
             <tr>
                 <td class="auto-style17">&nbsp;</td>
                 <td class="auto-style19">
-                    <asp:LinkButton ID="lbAgregarSucursal" runat="server" OnClick="lbAgregarSucursal_Click">Agregar sucursal</asp:LinkButton>
+                    <asp:HyperLink ID="hpAgregar" runat="server" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/Ejercicio 1.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style20">
-                    <asp:LinkButton ID="lbListadodeSucursales" runat="server" OnClick="lbListadodeSucursales_Click">Listado de sucursales</asp:LinkButton>
+                    <asp:HyperLink ID="hlListado" runat="server" ForeColor="Blue" NavigateUrl="~/Ejercicio 2.aspx">Listado de sucursales</asp:HyperLink>
                 </td>
                 <td>
-                    <asp:LinkButton ID="lbEliminarSucursal" runat="server" Font-Bold="False" OnClick="lbEliminarSucursal_Click">Eliminar sucursal</asp:LinkButton>
+                    <asp:HyperLink ID="hlEliminar" runat="server" ForeColor="Blue" NavigateUrl="~/Ejercicio 3.aspx">Eliminar sucursal</asp:HyperLink>
                 </td>
             </tr>
         </table>

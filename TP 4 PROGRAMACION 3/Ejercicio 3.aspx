@@ -19,28 +19,34 @@
         .auto-style4 {
             width: 353px;
         }
+        .auto-style5 {
+            width: 278px;
+        }
+        .auto-style6 {
+            width: 299px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td>
-                    <asp:LinkButton ID="lbAgregar" runat="server" OnClick="lbAgregar_Click">Agregar sucursal</asp:LinkButton>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="hpAgregar" runat="server" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/Ejercicio 1.aspx">Agregar Sucursal</asp:HyperLink>
+                </td>
+                <td class="auto-style6">
+                    <asp:HyperLink ID="hlListado" runat="server" ForeColor="Blue" NavigateUrl="~/Ejercicio 2.aspx">Listado de sucursales</asp:HyperLink>
                 </td>
                 <td>
-                    <asp:LinkButton ID="lbListado" runat="server" OnClick="lbListado_Click">Listado de sucursales</asp:LinkButton>
-                </td>
-                <td>
-                    <asp:LinkButton ID="lbEliminar" runat="server" OnClick="lbEliminar_Click">Eliminar sucursal</asp:LinkButton>
+                    <asp:HyperLink ID="hlEliminar" runat="server" ForeColor="Blue" NavigateUrl="~/Ejercicio 3.aspx">Eliminar sucursal</asp:HyperLink>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="auto-style5">
                     <br />
                     <asp:Label ID="lblEliminarSucursales" runat="server" Font-Bold="True" Font-Size="Larger" Text="Eliminar Sucursales"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
@@ -59,6 +65,7 @@
                 </tr>
             </table>
         </div>
+        <br />
         <asp:Label ID="lblAlerta" runat="server" ForeColor="Red"></asp:Label>
         <br />
         <asp:CompareValidator ID="cvNumeros" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="CompareValidator" Operator="GreaterThan" Type="Integer" ValueToCompare="0" ForeColor="Red" ValidationGroup="1">Solo se deben ingresar numeros</asp:CompareValidator>

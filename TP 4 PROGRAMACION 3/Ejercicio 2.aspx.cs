@@ -47,17 +47,6 @@ namespace TP_4_PROGRAMACION_3
 
         }
 
-
-        protected void lbAgregar_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 1.aspx");
-        }
-
-        protected void lbEliminar_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio 3.aspx");
-        }
-
         protected void btnMostrart_Click(object sender, EventArgs e)
         {
             CrearGrilla("Select Sucursal.Id_Sucursal, Sucursal.NombreSucursal, Sucursal.DescripcionSucursal as Descripcion, Provincia.DescripcionProvincia as Provincia, Sucursal.DireccionSucursal as Direccion  From Sucursal inner join Provincia on Sucursal.Id_ProvinciaSucursal = Provincia.Id_Provincia");
